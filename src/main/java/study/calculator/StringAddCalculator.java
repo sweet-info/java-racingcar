@@ -15,6 +15,7 @@ import java.util.regex.Pattern;
 public class StringAddCalculator {
 
     private static final Pattern CUSTOM_DELIMITER = Pattern.compile("//(.*?)\n(.*)");
+
     public static int splitAndSum(String input) {
         if (input == null || input.isEmpty()) {
             return 0;

@@ -32,6 +32,14 @@ public class StringAddCalculatorTest {
     }
 
     @Test
+    @DisplayName("콜론 구분자")
+    public void splitAndSum_콜론구분자() throws Exception {
+        int result = StringAddCalculator.splitAndSum("1:2");
+        assertThat(result).isEqualTo(3);
+    }
+
+
+    @Test
     @DisplayName("쉼표 또는 콜론 구분자")
     public void splitAndSum_쉼표_또는_콜론_구분자() throws Exception {
         int result = StringAddCalculator.splitAndSum("1,2:3");
